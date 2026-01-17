@@ -1,0 +1,31 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+publish_mode: editorial_workflow
+
+collections:
+  - name: "ilanlar"
+    label: "İlanlar"
+    folder: "content/ilanlar"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Başlık", name: "title", widget: "string" }
+      - { label: "Fiyat", name: "price", widget: "string" }
+      - { label: "Lokasyon", name: "location", widget: "string" }
+      - { label: "İlan Tipi", name: "type", widget: "select", options: ["Satılık", "Kiralık"] }
+      - { label: "Metrekare", name: "area", widget: "number" }
+      - { label: "Oda Sayısı", name: "rooms", widget: "string" }
+      - { label: "Kat", name: "floor", widget: "string" }
+      - { label: "Bina Yaşı", name: "age", widget: "string" }
+      - { label: "Kapak Görseli", name: "cover", widget: "image" }
+      - label: "Galeri"
+        name: "gallery"
+        widget: "list"
+        field: { label: "Görsel", name: "image", widget: "image" }
+      - { label: "Harita (Google Maps Embed)", name: "map", widget: "text", required: false }
+      - { label: "Açıklama", name: "body", widget: "markdown" }

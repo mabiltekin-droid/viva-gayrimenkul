@@ -1,0 +1,4 @@
+[[redirects]]
+from = "/portfoy/:slug"
+to = "/portfoy/ilan.html"
+status = 200
