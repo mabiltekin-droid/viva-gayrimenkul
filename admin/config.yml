@@ -2,7 +2,7 @@ backend:
   name: github
   repo: mabiltekin-droid/viva-gayrimenkul
   branch: main
-  base_url: "https://decap-oauth.m-a-biltekin.workers.dev"
+  base_url: "https://decap-oauth.ma-biltekin.workers.dev"
   auth_endpoint: "auth"
 
 site_url: "https://mylifevilla.pages.dev"
