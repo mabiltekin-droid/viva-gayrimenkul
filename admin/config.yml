@@ -1,11 +1,17 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: mabiltekin-droid/viva-gayrimenkul
   branch: main
+  base_url: "https://decap-oauth.ma-biltekin.workers.dev"
+  auth_endpoint: "callback"
+
+site_url: "https://mylifevilla.pages.dev"
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
 
 publish_mode: editorial_workflow
+
 
 collections:
   - name: "ilanlar"
@@ -29,3 +35,4 @@ collections:
         field: { label: "Görsel", name: "image", widget: "image" }
       - { label: "Harita (Google Maps Embed)", name: "map", widget: "text", required: false }
       - { label: "Açıklama", name: "body", widget: "markdown" }
+
